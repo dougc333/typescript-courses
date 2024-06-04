@@ -1,0 +1,16 @@
+{
+  "name": "chat-stdlib",
+  "packageManager": "yarn@3.6.4",
+  "volta": {
+    "node": "18.18.2",
+    "yarn": "3.6.4"
+  },
+  "scripts": {
+    "build": "yarn tsc ",
+    "test": "yarn jest",
+    "lint": "yarn eslint src --ext js,ts"
+  },
+  "devDependencies": {
+    "typescript": "~5.3.0"
+  }
+}
