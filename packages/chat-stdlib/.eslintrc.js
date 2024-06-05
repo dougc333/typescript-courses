@@ -10,16 +10,23 @@ module.exports = {
         "plugin:@typescript-eslint/recommended-requiring-type-checking" 
     ],
     "overrides": [
-        {
-            "env": {
-                "node": true,
-                "jest" : true
-            },
-            "files": "tests/**/*.ts",
-            "parserOptions": {
-                "sourceType": "script"
-            }
+      {
+        files:["tests/**/*.ts"],
+        env:{ "node": true,"jest" : true}
+      },
+      {  
+        extends: ["plugin:@typescript-eslint/disable-type-checked"],
+        rules: {
+        "@typescript-eslint/no-unsafe-assignment": "off",
+        },
+        "env": {
+          "node": true
+        },
+        "files": [".eslintrc.{js,cjs}"],
+        "parserOptions": {
+          "sourceType": "script"
         }
+      }
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
