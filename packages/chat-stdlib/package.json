@@ -11,6 +11,14 @@
     "lint": "yarn eslint src --ext js,ts"
   },
   "devDependencies": {
-    "typescript": "~5.3.0"
+    "@babel/core": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
+    "@babel/preset-typescript": "^7.24.7",
+    "@types/eslint": "^8",
+    "@typescript-eslint/eslint-plugin": "^7.12.0",
+    "@typescript-eslint/parser": "7.12.0",
+    "eslint": "8",
+    "jest": "^29.7.0",
+    "typescript": "^5.4.5"
   }
 }
