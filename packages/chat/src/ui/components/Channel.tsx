@@ -5,9 +5,11 @@ import ChannelFooter from './Channel/Footer'
 import ChannelHeader from './Channel/Header'
 import ChannelMessage from './Channel/Message'
 import Loading from './Loading'
-
+/**
+ * @type {React.FC<React.PropsWithChildren<any>>} param0
+ */
 const Channel = ({ channel }) => {
-  const [messages, setMessages] = React.useState()
+  const [messages, setMessages] = React.useState([])
   useAsyncDataEffect(
     () => getChannelMessages(channel.teamId, channel.id),
     {

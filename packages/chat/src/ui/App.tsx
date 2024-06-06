@@ -13,6 +13,9 @@ import Team from './components/Team'
 const { useState } = React
 
 const App = () => {
+  /**
+   * @type {any[] | null}
+   */
   const [teams, setTeams] = useState(null)
 
   useAsyncDataEffect(() => getAllTeams(), {
@@ -46,7 +49,9 @@ const App = () => {
               const { teamId: selectedTeamId } = params
               if (!selectedTeamId) throw new Error(`undefined teamId`)
 
-              const selectedTeam = teams.find((t) => t.id === selectedTeamId)
+              const selectedTeam = teams.find(
+                (t) => t.id === selectedTeamId,
+              )
               if (!selectedTeam)
                 throw new Error(
                   `Invalid could not find team with id {selectedTeamId}`,
