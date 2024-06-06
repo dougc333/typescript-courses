@@ -14,15 +14,122 @@ export declare class Deferred<T>
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)()](./chat-stdlib.deferred._constructor_.md) |  | Creates a new instance of the Deferred class. |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)()](./chat-stdlib.deferred._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Creates a new instance of the Deferred class.
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [promise](./chat-stdlib.deferred.promise.md) | <code>readonly</code> | Promise&lt;T&gt; | Gets the promise object associated with the deferred operation. |
-|  [reject](./chat-stdlib.deferred.reject.md) | <code>readonly</code> | (reason?: any) =&gt; void | Gets the function to call to reject the deferred operation. |
-|  [resolve](./chat-stdlib.deferred.resolve.md) | <code>readonly</code> | (value: T \| PromiseLike&lt;T&gt;) =&gt; void | Gets the function to call to resolve the deferred operation. |
+<table><thead><tr><th>
 
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[promise](./chat-stdlib.deferred.promise.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+Promise&lt;T&gt;
+
+
+</td><td>
+
+Gets the promise object associated with the deferred operation.
+
+
+</td></tr>
+<tr><td>
+
+[reject](./chat-stdlib.deferred.reject.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+(reason?: any) =&gt; void
+
+
+</td><td>
+
+Gets the function to call to reject the deferred operation.
+
+
+</td></tr>
+<tr><td>
+
+[resolve](./chat-stdlib.deferred.resolve.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+(value: T \| PromiseLike&lt;T&gt;) =&gt; void
+
+
+</td><td>
+
+Gets the function to call to resolve the deferred operation.
+
+
+</td></tr>
+</tbody></table>

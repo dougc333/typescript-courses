@@ -8,13 +8,52 @@ A small library for common chat app functions
 
 ## Classes
 
-|  Class | Description |
-|  --- | --- |
-|  [Deferred](./chat-stdlib.deferred.md) | A class that represents a deferred operation. |
+<table><thead><tr><th>
+
+Class
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[Deferred](./chat-stdlib.deferred.md)
+
+
+</td><td>
+
+A class that represents a deferred operation.
+
+
+</td></tr>
+</tbody></table>
 
 ## Functions
 
-|  Function | Description |
-|  --- | --- |
-|  [stringifyError(err, errorDescription)](./chat-stdlib.stringifyerror.md) | **_(BETA)_** Stringify a thrown value |
+<table><thead><tr><th>
 
+Function
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[stringifyError(err, errorDescription)](./chat-stdlib.stringifyerror.md)
+
+
+</td><td>
+
+**_(BETA)_** Stringify a thrown value
+
+
+</td></tr>
+</tbody></table>

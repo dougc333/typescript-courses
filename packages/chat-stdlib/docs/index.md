@@ -6,7 +6,26 @@
 
 ## Packages
 
-|  Package | Description |
-|  --- | --- |
-|  [chat-stdlib](./chat-stdlib.md) | A small library for common chat app functions |
+<table><thead><tr><th>
 
+Package
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[chat-stdlib](./chat-stdlib.md)
+
+
+</td><td>
+
+A small library for common chat app functions
+
+
+</td></tr>
+</tbody></table>

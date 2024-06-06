@@ -17,11 +17,55 @@ export declare function stringifyError(err: unknown, errorDescription: string): 
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  err | unknown | The thrown value |
-|  errorDescription | string | A contextual description of the error |
+<table><thead><tr><th>
 
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+err
+
+
+</td><td>
+
+unknown
+
+
+</td><td>
+
+The thrown value
+
+
+</td></tr>
+<tr><td>
+
+errorDescription
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+A contextual description of the error
+
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 string
