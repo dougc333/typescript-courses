@@ -5,14 +5,14 @@ import ChannelFooter from './Channel/Footer'
 import ChannelHeader from './Channel/Header'
 import ChannelMessage from './Channel/Message'
 import Loading from './Loading'
-import { IChannel } from '../../utils/types'
+import { IChannel, IMessage } from '../../utils/types'
 
 interface Props {
   channel: IChannel
 }
 
 const Channel = ({ channel }: Props) => {
-  const [messages, setMessages] = React.useState([])
+  const [messages, setMessages] = React.useState<IMessage[]>()
   useAsyncDataEffect(
     () => getChannelMessages(channel.teamId, channel.id),
     {
