@@ -1,6 +1,7 @@
 import { apiCall } from '../utils/networking'
+import { ITeam } from '../utils/types'
 
-let cachedAllTeamsList
+let cachedAllTeamsList: Promise<ITeam[]>
 export async function getAllTeams() {
   if (typeof cachedAllTeamsList === 'undefined')
     cachedAllTeamsList = apiCall('teams')
@@ -8,9 +9,9 @@ export async function getAllTeams() {
   return await cachedAllTeamsList
 }
 
-const cachedTeamRecords = {}
+const cachedTeamRecords: any = {}
 
-export async function getTeamById(id) {
+export async function getTeamById(id: string): Promise<ITeam> {
   let cached = cachedTeamRecords[id]
   if (typeof cached === 'undefined')
     cached = cachedTeamRecords[id] = apiCall(`teams/${id}`)

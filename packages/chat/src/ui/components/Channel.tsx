@@ -5,10 +5,13 @@ import ChannelFooter from './Channel/Footer'
 import ChannelHeader from './Channel/Header'
 import ChannelMessage from './Channel/Message'
 import Loading from './Loading'
-/**
- * @type {React.FC<React.PropsWithChildren<any>>} param0
- */
-const Channel = ({ channel }) => {
+import { IChannel } from '../../utils/types'
+
+interface Props {
+  channel: IChannel
+}
+
+const Channel = ({ channel }: Props) => {
   const [messages, setMessages] = React.useState([])
   useAsyncDataEffect(
     () => getChannelMessages(channel.teamId, channel.id),
@@ -35,12 +38,7 @@ const Channel = ({ channel }) => {
         role="list"
       >
         {messages.map((m) => (
-          <ChannelMessage
-            key={m.id}
-            body={m.body}
-            date={new Date(m.createdAt)}
-            user={m.user}
-          />
+          <ChannelMessage key={m.id} {...m} />
         ))}
       </div>
 

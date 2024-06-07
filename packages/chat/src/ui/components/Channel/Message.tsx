@@ -1,7 +1,10 @@
 import * as React from 'react'
 import { formatTimestamp } from '../../../utils/date.cjs'
+import { IMessage } from '../../../utils/types'
 
-const Message = ({ user, date, body }) => (
+const Message: React.FC<
+  Pick<IMessage, 'user' | 'createdAt' | 'body'>
+> = ({ user, createdAt, body }) => (
   <div
     className="flex items-start px-6 py-2 text-sm hover-target hover:bg-gray-100 message"
     role="listitem"
@@ -24,7 +27,7 @@ const Message = ({ user, date, body }) => (
         </a>
         <span className="sr-only">at</span>
         <time className="message__timestamp text-gray-500 text-xs font-normal ml-1">
-          {formatTimestamp(date)}
+          {formatTimestamp(new Date(createdAt))}
         </time>
       </h5>
 

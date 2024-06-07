@@ -50,7 +50,7 @@ const App = () => {
               if (!selectedTeamId) throw new Error(`undefined teamId`)
 
               const selectedTeam = teams.find(
-                (t) => t.id === selectedTeamId,
+                (t: any) => t.id === selectedTeamId,
               )
               if (!selectedTeam)
                 throw new Error(

@@ -1,7 +1,13 @@
 import * as React from 'react'
 import { Link, useRouteMatch } from 'react-router-dom'
-
-const ChannelLink = ({ to, channel }) => {
+import { IChannel } from '../../../utils/types'
+const ChannelLink = ({
+  to,
+  channel,
+}: {
+  to: string
+  channel: Pick<IChannel, 'name'>
+}) => {
   const match = useRouteMatch(to)
   return (
     <Link
