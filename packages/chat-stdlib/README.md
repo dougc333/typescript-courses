@@ -1,4 +1,8 @@
-# chat-stdlib
+# origin/first chat-stdlib
+
+tests/index.tests.ts doesnt work for references. get references with ../src not
+chat-stdlib import in index.tests.ts
+
 
 npx gitignore node
 volta pin node@18.18.2
